@@ -9,7 +9,7 @@ This project aims to show off my web development skills using a self-hosted site
 * Run the following commands at the project root
   * `npm install`
   * `npm start`
-* the site will now be hosted locally at http://localhost:3000/
+* The site will now be hosted locally at http://localhost:3000/
 
 ## Tools
 
