@@ -1,3 +1,6 @@
+import Button from '@material-ui/core/Button';
+import githubIcon from './img/GitHub-Mark-Light-32px.png';
+
 function App() {
   return (
     <div>
@@ -10,12 +13,14 @@ function App() {
         </p>
       </header>
       <div className="body">
-        <article>
-          <p>
-            This site was made in ReactJS and hosted using Cloudflare.
-            Please, have a look at the source <a href="https://github.com/martin-nef/mega-portfolio">on GitHub</a>.
-          </p>
-        </article>
+        <p>
+          <span>This site was made in ReactJS and hosted using Cloudflare.
+            Please, have a look at the source on&nbsp;
+          </span>
+          <Button variant="contained" color="primary" href="https://github.com/martin-nef/mega-portfolio">
+            GitHub&nbsp;&nbsp;<img src={githubIcon} alt="logo" />
+          </Button>
+        </p>
       </div>
     </div>
   );
