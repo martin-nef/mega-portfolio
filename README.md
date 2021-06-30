@@ -1,4 +1,4 @@
-# [mega-portfolio](https://mega-portfolio.pages.dev/)
+# [Project Mega Portfolio](https://mega-portfolio.pages.dev/)
 
 This project aims to show off my web development skills using a self-hosted site.
 
