@@ -5,7 +5,7 @@ function App() {
     <div>
       <header className="padding-top">
         <p>
-          My name's Martin and I'm an experienced web developer.
+          My name's Martin and I'm a professional web developer.
         </p>
         <p>
           Check out my portfolio 😊
