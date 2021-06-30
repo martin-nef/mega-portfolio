@@ -1,9 +1,7 @@
-import './App.scss';
-
 function App() {
   return (
     <div>
-      <header className="padding-top">
+      <header>
         <p>
           My name's Martin and I'm a professional web developer.
         </p>

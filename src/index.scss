@@ -1,15 +1,16 @@
+
 @import 'styles/colours';
 @import 'styles/fonts';
 @import 'styles/layout';
 
-.App {
+body {
+  background-color: $background;
   text-align: center;
+  color: $foreground;
 }
-
 
 div {
   background-color: $background;
-  color: $foreground;
 }
 
 p {
@@ -21,7 +22,10 @@ a {
 }
 
 header {
-  height: 50vmin;
+  ::before {
+    height: 10vmin;
+  }
+  height: 40vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,26 +42,13 @@ header {
   font-size: $small-text;
 }
 
-.padding-top {
-  padding-top: $padding-big;
+body {
+  margin: 0;
+  font-family: $default-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.big-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .big-logo {
-    animation: big-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes big-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+code {
+  font-family: $code-font-family;
 }
