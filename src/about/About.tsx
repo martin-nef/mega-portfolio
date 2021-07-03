@@ -1,21 +1,17 @@
-import FooterLayout from "common/FooterLayout";
-import GitHubButton from "common/GitBubButton";
+import GitHubButton from "about/GitBubButton";
 import SimpleCard from "common/SimpleCard";
-import BigNav from "nav/BigNav";
+import VerticalLayout from "layout/VerticalLayout";
 
 export default function About(): JSX.Element {
 	return (
-		<FooterLayout footer={<BigNav />}>
-			<SimpleCard>
-				<p>
-					<span>
-						This site was made in ReactJS and hosted using Cloudflare. Please, have a look
-						at the source on
-					</span>
-					&nbsp;
-					<GitHubButton />
-				</p>
+		<VerticalLayout>
+			<SimpleCard isRow={true}>
+				<span>
+					This site was made in ReactJS and hosted using Cloudflare. Please, have a look
+					at the source on
+				</span>
+				<GitHubButton />
 			</SimpleCard>
-		</FooterLayout>
+		</VerticalLayout>
 	)
 }
