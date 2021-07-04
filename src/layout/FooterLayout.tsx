@@ -5,9 +5,7 @@ export default function FooterLayout(props: PropsWithChildren<{ footer?: ReactEl
   return (
     <Box p={0} m={0}>
       <Box p={2}>
-        <Grid container>
-          {props.children}
-        </Grid>
+        {props.children}
       </Box>
       <Box position="fixed" bottom={0} width={1} p={1}>
         {props.footer}

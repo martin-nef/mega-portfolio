@@ -5,12 +5,12 @@ import { PropsWithChildren, ReactElement } from "react";
 
 export default function SimpleCard(props: PropsWithChildren<{ isRow?: boolean }>): ReactElement {
 	return (
-		<Card>
+		<Card className="SimpleCard">
 			<Box p={2}>
 				<Grid container
 					direction={props.isRow ? "row" : "column"}
-					justify="space-evenly"
-					alignItems="center"
+					justify="flex-start"
+					alignItems="flex-start"
 					spacing={2}>
 					<GridItems>
 						{props.children}
